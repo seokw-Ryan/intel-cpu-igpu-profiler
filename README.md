@@ -12,6 +12,14 @@ This project analyzes instruction throughput, caching behavior, thermal limits, 
 - **Processor:** Intel® Core™ Ultra 7 258V @ 2.20 GHz
 - **Memory:** 32.0 GB RAM 
 
+## Project Structure
+
+- `benchmarks/` - C/C++ source files for CPU and GPU benchmarks
+- `scripts/` - Bash/Python automation for running tests and processing results
+- `data/` - Raw log files from benchmark runs
+- `results/` - Processed CSVs and visualization plots
+- `docs/` - Design notes and methodology documentation
+
 ## Key Features
 
 - Custom C/C++ benchmarks for evaluating low-level CPU/GPU behavior
@@ -21,7 +29,7 @@ This project analyzes instruction throughput, caching behavior, thermal limits, 
 
 ## Tools & Technologies
 
-- **Languages:** C, C++
+- **Languages:** C, C++, Python, Bash
 - **Linux Tools:** 
   - `perf` - Performance counter statistics
   - `mpstat` - CPU utilization reporting
@@ -29,20 +37,16 @@ This project analyzes instruction throughput, caching behavior, thermal limits, 
   - `turbostat` - Intel CPU frequency and power data
   - `intel_gpu_top` - Intel GPU utilization monitoring
   - `RAPL` - Running Average Power Limit interface
-- **Optional:** Python + Matplotlib for visual analysis
+- **Visualization:** Python + Matplotlib for analysis and reporting
 
 ## Getting Started
 
-*Instructions for installation and setup will be added as the project develops.*
-
-## Usage
-
-*Usage examples and documentation will be added as the project develops.*
-
-## Contributing
-
-Contributions to improve the profiler are welcome. Please feel free to submit a pull request.
+1. Clone this repository
+2. Build the benchmarks with `cd benchmarks && make`
+3. Run benchmarks with `scripts/run_bench.sh`
+4. Process results with `scripts/parse_logs.py`
+5. Generate plots with `scripts/plot_results.py`
 
 ## License
 
-*License information will be added.*
+This project is licensed under the MIT License - see the LICENSE file for details.
