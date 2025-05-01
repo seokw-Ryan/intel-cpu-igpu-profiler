@@ -6,7 +6,7 @@
       • elapsed wall-clock time in seconds
       • primes-per-second rate
 
-    Build:  gcc -O3 -march=native -pipe prime_sieve.c -o prime_sieve
+    Build:  gcc -O3 -march=native -pipe prime_sieve.c -o prime_sieve -lm
     Run  :  ./prime_sieve [N]         (default N = 500 000 000)
 */
 
