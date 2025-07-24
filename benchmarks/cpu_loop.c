@@ -22,7 +22,7 @@ static double time_diff(struct timespec start, struct timespec end) {
 
 int main(int argc, char *argv[]) {
     /* Number of iterations for arithmetic loops */
-    size_t iterations = 100000000;  // default: 100 million
+    size_t iterations = 10000000000;  // default: 10 billion
     if (argc > 1) {
         iterations = strtoull(argv[1], NULL, 10);
     }
