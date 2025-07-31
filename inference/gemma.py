@@ -30,7 +30,7 @@ text_gen = pipeline(
 )
 
 # Run inference
-prompt = "Explain quantum computing in simple terms."
+prompt = "Hi"
 print(f"\nPrompt:\n{prompt}")
 output = text_gen(prompt, max_new_tokens=100, do_sample=True, temperature=0.7)
 print(f"\nGenerated:\n{output[0]['generated_text']}")
